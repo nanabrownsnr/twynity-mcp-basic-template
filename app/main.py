@@ -77,8 +77,8 @@ middleware = [
     Middleware(
         CORSMiddleware,
         allow_origins=origins,
-        allow_methods=["GET", "POST", "DELETE", "OPTIONS"],
-        allow_headers=["mcp-protocol-version", "mcp-session-id", "Authorization", "Content-Type"],
+        allow_methods=["*"],
+        allow_headers=["*"],
         expose_headers=["mcp-session-id"],
     )
 ]
